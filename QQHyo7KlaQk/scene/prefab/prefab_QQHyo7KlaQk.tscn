@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://c8dmehj61kl1i"]
+
+[ext_resource type="ArrayMesh" uid="uid://q722ortdlu8h" path="res://addons/2026_06_25_gdp_youtube_to_godot/QQHyo7KlaQk/assets/QQHyo7KlaQk_body.obj" id="1_8wxdx"]
+[ext_resource type="PackedScene" uid="uid://uge7lo5x4j44" path="res://addons/2026_06_25_gdp_youtube_to_godot/QQHyo7KlaQk/scene/prefab/prefab_QQHyo7KlaQk_limb.tscn" id="2_8wxdx"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_gvwmw"]
+margin = 7.949
+radius = 0.004
+height = 0.042140625
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gvwmw"]
+size = Vector3(0.09289551, 0.041885376, 0.06512451)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8wxdx"]
+size = Vector3(0.014152527, 0.027635574, 0.0031433105)
+
+[node name="PrefabQqHyo7KlaQkRobotDog" type="RigidBody3D" unique_id=1383094781]
+disable_mode = 2
+center_of_mass_mode = 1
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=663138780]
+transform = Transform3D(0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0, 0, 0, 1, -0.03785094, -0.0033243895, 0.03182216)
+shape = SubResource("CapsuleShape3D_gvwmw")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=197806507]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.024453722, -0.009916186, -0.033062696)
+shape = SubResource("CapsuleShape3D_gvwmw")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="." unique_id=1274019341]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.020929731, -0.009916186, -0.033062696)
+shape = SubResource("CapsuleShape3D_gvwmw")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="." unique_id=1357315833]
+transform = Transform3D(0.70710677, -0.70710677, 0, 0.70710677, 0.70710677, 0, 0, 0, 1, 0.03331987, -0.0048502684, 0.03248906)
+shape = SubResource("CapsuleShape3D_gvwmw")
+
+[node name="Mesh" type="Node3D" parent="." unique_id=1306448605]
+
+[node name="Body" type="MeshInstance3D" parent="Mesh" unique_id=73181743]
+mesh = ExtResource("1_8wxdx")
+
+[node name="LimbFrontLeft" parent="Mesh" unique_id=1198289290 instance=ExtResource("2_8wxdx")]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 0.021575835, 0.007227461, -0.029296752)
+
+[node name="LimbBackLeft" parent="Mesh" unique_id=1906078467 instance=ExtResource("2_8wxdx")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.025965793, 0.006888889, -0.02941026)
+
+[node name="LimbBackRight" parent="Mesh" unique_id=1335275875 instance=ExtResource("2_8wxdx")]
+transform = Transform3D(-3.0908613e-08, 0.70710677, -0.70710677, 3.0908613e-08, 0.70710677, 0.70710677, 1, 0, -4.371138e-08, -0.025965791, 0.007227461, 0.029410234)
+
+[node name="LimbFrontRight" parent="Mesh" unique_id=1348880724 instance=ExtResource("2_8wxdx")]
+transform = Transform3D(9.272585e-08, -0.70710677, -0.70710677, 9.272585e-08, 0.70710677, -0.70710677, 1, 0, 1.3113416e-07, 0.021575835, 0.006888889, 0.029523738)
+
+[node name="CollisionShape3DBody" type="CollisionShape3D" parent="." unique_id=1977838531]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0004272461, 0.021278381, 6.1035156e-05)
+shape = SubResource("BoxShape3D_gvwmw")
+
+[node name="CollisionShape3DEarR" type="CollisionShape3D" parent="." unique_id=42610501]
+transform = Transform3D(0.7642059, -0.6449724, 0, 0.6449724, 0.7642059, 0, 0, 0, 1, 0.025705254, 0.04238468, 0.032546997)
+shape = SubResource("BoxShape3D_8wxdx")
+
+[node name="CollisionShape3DEarL" type="CollisionShape3D" parent="." unique_id=878572081]
+transform = Transform3D(0.7642059, -0.6449724, 0, 0.6449724, 0.7642059, 0, 0, 0, 1, 0.025705254, 0.04238468, -0.03263247)
+shape = SubResource("BoxShape3D_8wxdx")

@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bonsgbvbyqhy5"
+path="res://.godot/imported/QQHyo7KlaQk_limb.obj-8852869891063d0f562aa863dd0c3fed.mesh"
+
+[deps]
+
+files=["res://.godot/imported/QQHyo7KlaQk_limb.obj-8852869891063d0f562aa863dd0c3fed.mesh"]
+
+source_file="res://addons/2026_06_25_gdp_youtube_to_godot/QQHyo7KlaQk/assets/QQHyo7KlaQk_limb.obj"
+dest_files=["res://.godot/imported/QQHyo7KlaQk_limb.obj-8852869891063d0f562aa863dd0c3fed.mesh", "res://.godot/imported/QQHyo7KlaQk_limb.obj-8852869891063d0f562aa863dd0c3fed.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

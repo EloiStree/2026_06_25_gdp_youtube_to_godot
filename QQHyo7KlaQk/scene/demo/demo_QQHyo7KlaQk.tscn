@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://rjbg074jstmk"]
+
+[ext_resource type="PackedScene" uid="uid://c8dmehj61kl1i" path="res://addons/2026_06_25_gdp_youtube_to_godot/QQHyo7KlaQk/scene/prefab/prefab_QQHyo7KlaQk.tscn" id="1_kg74d"]
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_6dmw8"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_gvwmw"]
+size = Vector3(1, 1.4864502, 1)
+
+[node name="DemoQqHyo7KlaQk" type="Node3D" unique_id=1928419464]
+
+[node name="PrefabQqHyo7KlaQkRobotDog" parent="." unique_id=343491942 instance=ExtResource("1_kg74d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.035996065, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=686811102]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=259163127]
+shape = SubResource("WorldBoundaryShape3D_6dmw8")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1119221130]
+transform = Transform3D(1, 0, 0, 0, 0.9255704, 0.37857544, 0, -0.37857544, 0.9255704, 0, 0.15754893, 0.21911108)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1563481055]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.7567749, 0)
+mesh = SubResource("BoxMesh_gvwmw")
